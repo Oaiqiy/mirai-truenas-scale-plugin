@@ -6,7 +6,7 @@ plugins {
     id("net.mamoe.mirai-console") version "2.13.2"
 }
 
-group = "org.example"
+group = "dev.oaiqiy"
 version = "0.1.0"
 
 repositories {
@@ -14,4 +14,8 @@ repositories {
         maven("https://maven.aliyun.com/repository/public") // 阿里云国内代理仓库
     }
     mavenCentral()
+}
+
+dependencies {
+    implementation("dev.oaiqiy:truenas-scale-sdk:1.0")
 }
